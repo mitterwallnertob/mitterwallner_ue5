@@ -57,7 +57,18 @@ public class Main extends Application {
 
         EventHandler<MouseEvent> cf_conv = new EventHandler<MouseEvent>() {
             @Override
-            public void handle(MouseEvent mouseEvent) {}
+            public void handle(MouseEvent mouseEvent) {
+                try {
+
+                    double c_value = Double.parseDouble(txtf1.getText());
+                    double f_value = (c_value * 9/5) + 32;
+                    txtf2.setText(String.valueOf(f_value));
+                }
+                catch (Exception e) {
+
+                    System.out.println("Fehler! Bitte erneut versuchen!");
+                }
+            }
         };
 
         Button c_f = new Button("°C  ->  °F");
@@ -73,6 +84,8 @@ public class Main extends Application {
         f_c.setStyle("-fx-font-weight: bold;" +
                 "-fx-font-size: 20px;");
         root_list.add(f_c);
+
+        f_c.addEventHandler(MouseEvent.MOUSE_CLICKED, fc_conv);
 
         GridPane gridPane = new GridPane();
 
