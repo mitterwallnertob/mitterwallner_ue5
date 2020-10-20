@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4854bee1-1d37-41a2-a77d-b088e2de61af" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="4854bee1-1d37-41a2-a77d-b088e2de61af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> Feature_A
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603224094435</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="basic ui design (eventhandler don't work yet)">
+      <created>1603224717428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603224717428</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="added labels and textfields" />
-    <option name="LAST_COMMIT_MESSAGE" value="added labels and textfields" />
+    <MESSAGE value="basic ui design (eventhandler don't work yet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic ui design (eventhandler don't work yet)" />
   </component>
 </project>
