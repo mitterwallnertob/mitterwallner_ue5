@@ -50,7 +50,43 @@ public class Main extends Application {
         txtf2.setStyle("-fx-font-size: 16px;");
         root_list.add(txtf2);
 
-        Scene scene = new Scene (root,600,400);
+        EventHandler<MouseEvent> fc_conv = new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {}
+        };
+
+        EventHandler<MouseEvent> cf_conv = new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {}
+        };
+
+        Button c_f = new Button("°C  ->  °F");
+        c_f.setPrefWidth(250);
+        c_f.setMaxHeight(25);
+        c_f.setStyle("-fx-font-weight: bold;" +
+                "-fx-font-size: 20px;");
+        root_list.add(c_f);
+
+        Button f_c = new Button("°F  ->  °C");
+        f_c.setPrefWidth(250);
+        f_c.setMaxHeight(25);
+        f_c.setStyle("-fx-font-weight: bold;" +
+                "-fx-font-size: 20px;");
+        root_list.add(f_c);
+
+        GridPane gridPane = new GridPane();
+
+        // adding buttons to the Gridpane
+        gridPane.add(root,0,0);
+        gridPane.add(c_f, 0, 1);
+        gridPane.add(f_c, 0, 2);
+        gridPane.setStyle("-fx-background-color: #d15415;");
+
+        // spacing the buttons
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+
+        Scene scene = new Scene (gridPane,600,400);
         st.setTitle("Temperature Converter v0.01");
         st.setScene(scene);
         st.getIcons().add(new Image("Icon.png"));
